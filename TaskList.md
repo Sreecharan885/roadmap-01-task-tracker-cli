@@ -1,0 +1,7 @@
+- [X] Write the code for adding a task
+- [X] Add the following utility functions 
+  - [X] Get the id of latest task
+  - [X] Get current timestamp
+  - [X] Check if the task database file exists
+  - [X] Create the task database file
+- [ ] Add the main logic for Command Line interaction using while loop
