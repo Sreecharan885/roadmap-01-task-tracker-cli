@@ -5,3 +5,11 @@
   - [X] Check if the task database file exists
   - [X] Create the task database file
 - [ ] Add the main logic for Command Line interaction using while loop
+  - [X] add command
+  - [ ] quit command
+  - [ ] update command
+  - [ ] list command
+  - [ ] delete command
+  - [ ] mark command
+- [ ] Create a file with tasks array when nothing exists yet
+- [X] Save the changes post every manipulative operation

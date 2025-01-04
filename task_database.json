@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "description": "Get eggs",
+            "status": "todo",
+            "createdAt": "2025-01-04 12:01:45.526835",
+            "updatedAt": "2025-01-04 12:01:45.526835"
+        },
+        {
+            "id": 2,
+            "description": "Buy oranges",
+            "status": "todo",
+            "createdAt": "2025-01-04 12:01:51.153818",
+            "updatedAt": "2025-01-04 12:01:51.153818"
+        },
+        {
+            "id": 3,
+            "description": "Get you tank filled",
+            "status": "todo",
+            "createdAt": "2025-01-04 12:02:06.805686",
+            "updatedAt": "2025-01-04 12:02:06.805686"
+        }
+    ]
+}
