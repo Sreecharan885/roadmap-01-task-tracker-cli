@@ -6,10 +6,13 @@
   - [X] Create the task database file
 - [ ] Add the main logic for Command Line interaction using while loop
   - [X] add command
-  - [ ] quit command
-  - [ ] update command
-  - [ ] list command
-  - [ ] delete command
-  - [ ] mark command
+  - [X] quit command
+  - [X] update command
+  - [X] list command
+  - [X] list based on status
+  - [X] delete command
+  - [X] mark command to change the status to in progress or done 
+- [ ] Give some acknowledgement to user for each command informing that his action is completed
+- [ ] Modularizing the entire code into multiple files for easy management
 - [ ] Create a file with tasks array when nothing exists yet
 - [X] Save the changes post every manipulative operation
