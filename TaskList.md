@@ -13,9 +13,9 @@
   - [X] delete command
   - [X] mark command to change the status to in progress or done 
   - [X] help command
-- [ ] Give some acknowledgement to user for each command informing that his action is completed
+- [X] Give some acknowledgement to user for each command informing that his action is completed
 - [X] Modularizing the entire code into multiple files for easy management
 - [X] Create a file with tasks array when nothing exists yet
 - [ ] Remove any hardcoded values
-- [ ] Write down a list of possibilities and execute them on the code
+- [ ] Write down a list of possibilities in the testing-document and execute them on the code
 - [X] Save the changes post every manipulative operation

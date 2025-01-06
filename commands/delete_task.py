@@ -14,4 +14,5 @@ def delete_task(id):
         json_file_object.seek(0)
         json_file_object.truncate()
         json.dump(data,json_file_object)
+        print("Task deleted succesfully")
     json_file_object.close()

@@ -24,3 +24,4 @@ def add(task_description):
     json_file_object.truncate()
     json.dump(data,json_file_object)
     json_file_object.close()
+    print("Task added successfully")

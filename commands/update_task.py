@@ -12,11 +12,11 @@ def update(id, task_description):
             updated = True
     if updated == False:
         print("Task with given id doesn't exist")
-    else:
-        print("Updated")    
+    else: 
         json_file_object.seek(0)
         json_file_object.truncate()
         json.dump(data,json_file_object)
+        print("Updated task's description successfully")
     json_file_object.close()
 
 def update_status(id, status):
@@ -31,7 +31,7 @@ def update_status(id, status):
     if updated == False:
         print("Task with given id doesn't exist")
     else:
-        print("Updated")    
+        print("Updated tasks's status successfully")    
         json_file_object.seek(0)
         json_file_object.truncate()
         json.dump(data,json_file_object)
