@@ -4,7 +4,7 @@
   - [X] Get current timestamp
   - [X] Check if the task database file exists
   - [X] Create the task database file
-- [ ] Add the main logic for Command Line interaction using while loop
+- [X] Add the main logic for Command Line interaction using while loop
   - [X] add command
   - [X] quit command
   - [X] update command
@@ -12,7 +12,7 @@
   - [X] list based on status
   - [X] delete command
   - [X] mark command to change the status to in progress or done 
-  - [ ] help command
+  - [X] help command
 - [ ] Give some acknowledgement to user for each command informing that his action is completed
 - [X] Modularizing the entire code into multiple files for easy management
 - [X] Create a file with tasks array when nothing exists yet

@@ -6,6 +6,7 @@ from commands.add_task import add
 from commands.update_task import update, update_status
 from commands.list_task import list_tasks
 from commands.delete_task import delete_task
+from commands.help import help
 
 def main():
     # Write the core logic for Command line interaction here using match
@@ -78,6 +79,9 @@ def main():
                 elif main_command == 'mark-done':
                     update_status(task_id,"done")
 
+            case 'help':
+                help()
+                
             case 'quit':
                 break_flag = True
                 
