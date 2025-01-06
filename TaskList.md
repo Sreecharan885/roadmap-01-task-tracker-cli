@@ -15,7 +15,7 @@
   - [ ] help command
 - [ ] Give some acknowledgement to user for each command informing that his action is completed
 - [X] Modularizing the entire code into multiple files for easy management
-- [ ] Create a file with tasks array when nothing exists yet
+- [X] Create a file with tasks array when nothing exists yet
 - [ ] Remove any hardcoded values
 - [ ] Write down a list of possibilities and execute them on the code
 - [X] Save the changes post every manipulative operation

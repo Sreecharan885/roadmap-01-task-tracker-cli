@@ -1,9 +1,15 @@
 from utility_functions.get_current_timestamp import get_current_timestamp
 from utility_functions.get_latest_id import get_latest_id
+from utility_functions.file_exist import file_exists
 import json
 
 # For adding a task to the file handler object
 def add(task_description):
+    if not file_exists():
+        data = {"tasks": []} 
+        filename = 'task_database.json' 
+        with open(filename, 'w') as json_file: 
+            json.dump(data, json_file, indent=4)
     json_file_object = open('task_database.json','r+')
     data = json.load(json_file_object)
     task = {
