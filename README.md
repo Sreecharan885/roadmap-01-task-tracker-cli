@@ -12,9 +12,10 @@ This is [the first project from the Backend roadmap in Roadmap.sh](https://roadm
 7. `help` - To understand how to use all the commands in this app
 8. `quit` - To stop the application
 
-As you can see, it also contains general commands like `help` and `quit`
-
 ## Usage
-1. Clone the repository to your local system
+1. Clone the repository to your local system using the following commands
+   - `git clone https://github.com/Sreecharan885/roadmap-01-task-tracker-cli.git`
 2. Navigate into the project directory
-3. Run the `task_tracker_cli.py`
+   - `cd roadmap-01-task-tracker-cli`
+3. Run the task_tracker_cli.py
+   - `python task_tracker_cli.py` / `py task_tracker_cli.py`
