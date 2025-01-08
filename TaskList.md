@@ -16,6 +16,7 @@
 - [X] Give some acknowledgement to user for each command informing that his action is completed
 - [X] Modularizing the entire code into multiple files for easy management
 - [X] Create a file with tasks array when nothing exists yet
-- [ ] Remove any hardcoded values
-- [ ] Write down a list of possibilities in the testing-document and execute them on the code
+- [X] Remove any hardcoded values - Didn't find any
+- [X] Write down a list of possibilities in the testing-document and execute them on the code
+- [ ] Put the command-length-check as it's own utility function
 - [X] Save the changes post every manipulative operation

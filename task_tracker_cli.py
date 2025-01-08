@@ -18,15 +18,16 @@ def main():
         
         # When nothing is typed
         try:
-            main_command = parse_command[0]
+            main_command = parse_command[0].lower()
         except:
             continue
         command_length = len(parse_command)
 
-        if main_command not in ['add','quit']:
-            if not file_exists():
-                print("No tasks available. Add a task to continue")
-                continue
+        commands = ['add','update','delete','list','mark-done','mark-in-progress','help','quit']
+
+        if main_command not in commands:
+            invalid_command("No such command exists")
+            continue
 
         match main_command:
             case 'add':
@@ -37,13 +38,26 @@ def main():
                 add(task_description=task_description)
 
             case 'list':
-                if command_length < 1 and command_length > 2:
+                if command_length < 1 or command_length > 2:
                     invalid_command("The number of parameters is not correct for the given command")
                     continue
                 else:
                     if command_length == 2:
-                        list_tasks(status=parse_command[1])
+                        try:
+                            status = status=parse_command[1].lower()
+                        except:
+                            status = "Invalid"
+                        if status not in [None, "todo", "in-progress", "done"]:
+                            print("Invalid status")
+                            continue
+                        if not file_exists():
+                            print("No tasks available. Add a task to continue")
+                            continue
+                        list_tasks(status=status)
                     else:
+                        if not file_exists():
+                            print("No tasks available. Add a task to continue")
+                            continue
                         list_tasks()
 
             case 'update':
@@ -54,7 +68,10 @@ def main():
                     task_id = int(parse_command[1])
                 except:
                     print("Invalid task id")
-                    continue                
+                    continue     
+                if not file_exists():
+                    print("No tasks available. Add a task to continue")
+                    continue           
                 task_description = parse_command[2]
                 update(task_id,task_description)
 
@@ -67,26 +84,42 @@ def main():
                 except:
                     print("Invalid task id")
                     continue
+                if not file_exists():
+                    print("No tasks available. Add a task to continue")
+                    continue   
                 delete_task(task_id)
 
             case 'mark-in-progress' | 'mark-done':
                 if command_length != 2:
                     invalid_command("The number of parameters is not correct for the given command")
                     continue
-                task_id = int(parse_command[1])
+                try:
+                    task_id = int(parse_command[1])
+                except:
+                    print("Invalid task id")
+                    continue
+                if not file_exists():
+                    print("No tasks available. Add a task to continue")
+                    continue
                 if main_command == 'mark-in-progress':
                     update_status(task_id,"in-progress")
                 elif main_command == 'mark-done':
                     update_status(task_id,"done")
 
             case 'help':
+                if command_length != 1:
+                    invalid_command("The number of parameters is not correct for the given command")
+                    continue
                 help()
                 
             case 'quit':
+                if command_length != 1:
+                    invalid_command("The number of parameters is not correct for the given command")
+                    continue
                 break_flag = True
                 
             case _:
-                invalid_command("The command doesn't exist")
+                invalid_command("Invalid usage")
 
 if __name__ == "__main__":
     main()
