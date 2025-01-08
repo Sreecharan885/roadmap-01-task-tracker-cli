@@ -1,6 +1,6 @@
 Hey,
 
-This is the first project from the [Backend roadmap in Roadmap.sh](https://roadmap.sh/backend/projects). It is a CLI application that can be used for tracking tasks.
+This is [the first project from the Backend roadmap in Roadmap.sh](https://roadmap.sh/projects/task-tracker). It is a CLI application that can be used for tracking tasks.
 
 ## Doc:
 1. `add` `description` - To add a new task with the given description
